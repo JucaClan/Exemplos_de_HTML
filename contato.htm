@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <h1 style="color: red;">Site do Juca</h1>
+  <h1 style="color: red;">Contato do Juca</h1>
   <img src="imagens\ussr.gif" width="250px">
 
   <!-- menu -->
@@ -20,6 +20,161 @@
     <li><a href="file:///C:/xampp/htdocs/juca/sobre.htm"> Sobre </a></li>
     <li><a href="file:///C:/xampp/htdocs/juca/contato.htm"> Contato </a></li>
   </ul>
+  <br>
+
+  <!-- Formulário para contato -->
+  <h4>Formulário para contato</h4>
+  <form action="">
+    <p>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" placeholder="Digite seu nome">
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Digite seu Email">
+    </p>
+    <p>
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" placeholder="Digite seu Telefone">
+    </p>
+    <p>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="Digite sua Senha">
+    </p>
+
+    <p>
+      <label for="estado civil">Estado Civil:</label><br>
+      <input type="radio" id="Solteiro" name="estado civil"> <label for="Solteiro">Solteiro</label>
+      <input type="radio" id="Casado" name="estado civil"> <label for="Casado">Casado</label>
+      <input type="radio" id="Divorciado" name="estado civil"> <label for="Divorciado">Divorciado</label>
+      <input type="radio" id="Viuvo" name="estado civil"> <label for="Viuvo">Viúvo</label>
+    </p>
+
+    <p>
+      <label for="departamento">Departamento</label>
+      <select name="departamento" id="departamento">
+        <option value="administrativo">Administrativo</option>
+        <option value="atendimento">Atendimento</option>
+        <option value="financeiro">Financeiro</option>
+        <option value="suporte">Suporte</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="mensagem">Digite sua mensagem:</label><br>
+      <textarea id="mensagem" maxlength="200" rows="5" cols="25"></textarea>
+    </p>
+
+    <p>
+      <label for="datacontato">Melhor Data p/ Contato</label>
+      <input type="date" id="datacontato" name="datacontato">
+    </p>
+
+    <p>
+      <input type="checkbox" id="termosdeservico" name="termosdeservico" required>
+      <label for="">Li e concordo com os termos de uso.</label>
+    </p>
+    <p>
+      <input type="checkbox" id="propagandas" name="propagandas" checked required>
+      <label for="">Aceito receber ofertas comerciais de nosso parceiros.</label>
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+    </p>
+
+  </form>
+
+
+
+
+
+
+  <table border="1">
+    <form action="">
+
+      <tr>
+        <th colspan="2">Cadastro</th>
+
+      </tr>
+
+      <tr>
+        <td> <label for="nomecompleto">Nome completo</label><br></td>
+        <td><input type="text" id="nomecompleto" placeholder="Digite seu nome"></td>
+
+
+      </tr>
+      <tr>
+        <td><label for="datanascimento">Data de Nascimento</label></td>
+        <td><input type="date" id="datanascimento" name="datanascimento"></td>
+      </tr>
+      <tr>
+        <td> <label for="sexo">Sexo:</label></td>
+        <td>
+        <input type="radio" id="Feminino" name="sexo"> <label for="Feminino">Feminino</label><br>
+        <input type="radio" id="Masculino" name="sexo"> <label for="Masculino">Masculino</label><br>
+        <input type="radio" id="PrefiroNaoResponder" name="sexo"> <label for="PrefiroNaoResponder">Prefiro não
+          responder</label><br>
+        </td>
+      </tr>
+      <tr>
+        <td> <label for="email">Email</label></td>
+        <td> <input type="email" id="email" placeholder="seu@email.com"></td>
+      </tr>
+      <tr>
+        <td><label for="senha">Senha</label></td>
+        <td><input type="password" id="senha" placeholder="Digite sua Senha"></td>
+      </tr>
+
+      <tr>
+        <td> <label for="repetirsenha">Repetir Senha</label></td>
+        <td><input type="password" id="repetirsenha" placeholder="Repita sua Senha"></td>
+      </tr>
+
+      <TR>
+        <td><label for="departamento">Departamento</label></td>
+        <td>
+          <select name="departamento" id="departamento">
+            <option value="administrativo">Administrativo</option>
+            <option value="atendimento">Atendimento</option>
+            <option value="financeiro">Financeiro</option>
+            <option value="suporte">Suporte</option>
+        </td>
+        </select>
+      </TR>
+
+      <tr>
+        <td><label for="motivo">Justificativa da Aplicação</label><br></td>
+        <td>
+          <textarea id="motivo" maxlength="200" rows="3" cols="20"
+            placeholder="Informe o motivo de estar se cadastrando:"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="">Confirmo que li e aceito os termos de uso.</label></td>
+        <td><input type="checkbox" id="termosdeservico" name="termosdeservico" required></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><input type="submit" value="Cadastrar">           </td>
+
+      </tr>
+
+    </form>
+
+  </table>
+
+
+
+
+
+
+
+
+
+
+
 
   <br>
   <p>
