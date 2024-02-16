@@ -18,28 +18,26 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: antiquewhite;
-   
-    background-image: url(imagens/stalin.jpg);
+
+    background-image: url(imagens/Stalin.jpg);
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: ;
     -webkit-text-stroke-color: #000;
 
 }
 
 h1 {
-    
-    color: rgb(235, 11, 11);
+    color: rgb(255, 255, 255);
     font-size: 75px;
-    
+
 }
 
 p {
-    font-size: medium;
+    font-size: 28px;
     color: rgb(0, 0, 0);
-
 }
 
 h2 {
@@ -48,39 +46,90 @@ h2 {
     background-color: rgb(253, 0, 0);
     color: white;
     text-align: center;
-
 }
 
 h4 {
-
+    font-size: 32px;
+    font-style: italic;
     color: red;
 }
 
 ul li a {
-    color: blue;
+    font-size: 26px;
+    color: rgb(89, 0, 255);
+    text-decoration: none;
 }
 
-.img{
-    
+ul li a:hover {
+    color: rgb(4, 126, 14);
+    font-size: 35pt;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.img {
     margin-left: 400px;
+}
+
+.imgP {
+    margin-left: 450px;
+    position: relative;
+    left: 50%;
+    margin-top: -20px;
 }
 
 .centro {
     text-align: center;
+
+
+}
+
+a[href^="/t"]>span[style^="color:#f7ffcc;"],
+
+.rainbow {
+    background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    animation: rainbow 3s ease-in-out infinite;
+    background-size: 400% 100%;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
+    font-size: 98px;
+}
+
+
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
 }
 
 .vermelho {
-    border: 12px;
+    border: 8px;
     animation: animate 3.2s linear infinite;
     font-size: 16px;
     text-align: center;
     color: red
-    
 }
 
 .pisca {
     animation: animate 2.5s linear infinite;
     font-size: 46px;
+
 }
 
 .tabela {
@@ -95,33 +144,100 @@ ul li a {
     animation: animate 1.5s linear infinite;
 }
 
-input[type='submit']{
-    background-color: rgb(255, 0, 140);
+input[type='submit'] {
+    background-color: rgb(0, 161, 13);
     color: white;
-    padding: 22px;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 8px;
-    
-   
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
 }
 
-.textoC {
-    font-size:36px;
-    -webkit-background-clip: text;
-    color: white;
-    -webkit-text-fill-color: transparent;
-    background-color:#FFF;
-    background-image: -webkit-gradient(linear,left top,right top,from(#ea8711), to(#d96363));
-    background-image: -webkit-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
-    background-image: -moz-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
-    background-image: -ms-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
-    background-image: -o-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
-  }
+input[type=submit]:hover {
+    background-color: #0d6912;
+    transition: 0.5s;
+}
 
-.teste {
-    color: #ec08c6;
-    border: 4px dashed rgb(7, 7, 7);
+div {
+    margin: 20%;
+    background-color: #b33737;
+    padding: 20px;
+    border-radius: 12px;
+    -webkit-box-shadow: 15px 13px 38px 5px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 15px 13px 38px 5px rgba(0, 0, 0, 0.39);
+    box-shadow: 15px 13px 38px 5px rgba(0, 0, 0, 0.39);
     
-    
+
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=tel],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    text-align: center;
+    font-size: 34px;
+}
+
+.formulario {
+    color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-size: 32px;
 }
