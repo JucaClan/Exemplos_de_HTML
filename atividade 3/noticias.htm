@@ -1,58 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade CSS</title>
+    <title>Exercício 2</title>
+
     <style>
-        /* 
-        Insira o estilo CSS aqui: 
-        */
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
+
         }
-        #titulosite{
+
+        #titulosite {
             font-size: 36px;
             font-weight: bold;
             text-align: center;
             margin-bottom: 18px;
         }
+
+        #descricao {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .titulonoticia {
+            font-size: 24px;
+            text-decoration: underline;
+        }
+
+        .corponoticia {
+            font-size: 16px;
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .btn-leiamais {
+            color: white;
+            background-color: #1a73e8;
+            padding: 8px 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
     </style>
+
 </head>
- 
+
 <body>
     <h1 id="titulosite">Portal de Notícias</h1>
-    <p>Seu portal de notícias furiosas.</p>
- 
+    <p id="descricao">Seu portal de notícias furiosas.</p>
+
     <hr>
     <h2>Últimas notícias:</h2>
     <h1 class="titulonoticia">TensorFlow Lite agora suporta modelos de detecção de objetos 3D</h1>
     <p class="corponoticia">A equipe do TensorFlow anunciou que o TensorFlow Lite, uma versão leve da biblioteca, agora
-        suporta modelos de
-        detecção de objetos 3D, permitindo a criação de aplicativos de realidade aumentada e virtual com maior precisão.
+        suporta modelos de detecção <br>
+        de objetos 3D, permitindo a criação de aplicativos de realidade aumentada e virtual com maior precisão.
     </p>
     <p><a href="#" class="btn-leiamais">Leia mais...</a></p>
+
     <hr>
     <h1 class="titulonoticia">Google anuncia a criação do TensorFlow Quantum</h1>
     <p class="corponoticia">O Google anunciou a criação do TensorFlow Quantum, uma extensão da biblioteca TensorFlow que
+        <br>
         permite a simulação de algoritmos quânticos. O TensorFlow Quantum é destinado a pesquisadores e desenvolvedores
+        <br>
         que trabalham em computação quântica.
     </p>
     <p><a href="#" class="btn-leiamais">Leia mais...</a></p>
+
     <hr>
     <h1 class="titulonoticia">TensorFlow agora suporta a criação de modelos de geração de linguagem natural</h1>
     <p class="corponoticia">O TensorFlow agora suporta a criação de modelos de geração de linguagem natural, permitindo
+        <br>
         a criação de chatbots e assistentes virtuais mais sofisticados e precisos.
     </p>
     <p><a href="#" class="btn-leiamais">Leia mais...</a></p>
+
     <hr>
     <h1 class="titulonoticia">TensorFlow fornece modelos pré-treinados para classificação de imagens médicas</h1>
     <p class="corponoticia">O TensorFlow fornece modelos pré-treinados para classificação de imagens médicas, permitindo
+        <br>
         que os médicos possam identificar rapidamente anomalias em imagens de raios-X, ressonância magnética e outros
+        <br>
         exames, facilitando o diagnóstico e tratamento de doenças.
     </p>
     <p><a href="#" class="btn-leiamais">Leia mais...</a></p>
+
 </body>
- 
+
 </html>
